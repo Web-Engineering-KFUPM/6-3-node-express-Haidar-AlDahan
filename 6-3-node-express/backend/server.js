@@ -15,7 +15,9 @@ app.use(cors());
 
 app.use(morgan("dev"));
 // TODO 6.1: Create root route "/"
-
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
 // TODO 6.2: Create "/api/quote" route
 
 // TODO 7: Start server using app.listen
