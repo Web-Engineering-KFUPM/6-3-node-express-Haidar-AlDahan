@@ -1,4 +1,5 @@
 import cors from "cors";
+import morgan from "morgan";
 // TODO 1: Import and Create express app instance
 import express from "express";
 
@@ -12,6 +13,7 @@ const PORT = 3000;
 app.use(cors());
 // TODO 5: Import and apply Morgan middleware
 
+app.use(morgan("dev"));
 // TODO 6.1: Create root route "/"
 
 // TODO 6.2: Create "/api/quote" route
